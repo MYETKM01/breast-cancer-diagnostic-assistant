@@ -1,78 +1,60 @@
-# 國立宜蘭大學 資工系 IDAL實驗室 111學年度 專題
+# Breast Cancer Detection Assistant Using Deep Learning and Mixed Reality
 
-### 專題題目 : 基於深度學習與混合實境介面之乳癌辨識輔助診斷系統
-### Breast Cancer Diagnostic Assistant System Using Deep Learning and Mixed Reality Interface
+## Project Overview
 
-團隊成員 : 簡名駿 B0943017, 王昱捷 B0943022, 郭又萓 B0943033, 張光猛 B0943048    
-指導教授 : 林斯寅 教授  
+This project was a collaborative undergraduate research project focused on developing a breast cancer diagnostic assistance system using deep learning and mixed reality.
 
-根據WHO的統計每年罹患乳癌的人數不斷增加，我們希望能夠使用所學來解決這項問題。  
-因此在教授安排下與陽大陳慶耀醫師討論後整理出了三項功能: 即時良惡性預測功能、病例比較功能、病例查詢功能。
+The system combined mammogram image analysis with a mixed reality interface to help visualize and interact with medical imaging results.
 
-即時良惡性預測功能 : 使用CBIS-DDSM中的裁切圖做為訓練用資料、經過前處理後使用EfficientNet B7做遷移學習。  
-病例比較功能 : 使用OpenCV套件實作，仍在改善中。  
-病例查詢功能 : 從資料庫取得資料後在Hololens上呈現。  
+The project explored deep learning-based breast calcification classification, medical image processing, and visualization through Microsoft HoloLens 2.
 
-This project aims to develop a breast cancer diagnostic assistant system combining deep learning methods with a mixed reality interface. The system helps doctors perform breast cancer diagnosis by providing image analysis, comparison capabilities, and AI-powered predictions through Microsoft HoloLens 2.
+## System Features
 
-## Key Features
+- Breast calcification classification using EfficientNetB7 transfer learning
+- Mammogram dataset preparation and preprocessing
+- Region of Interest (ROI) cropping
+- Mammogram image comparison using OpenCV
+- Mixed reality visualization using Unity, MRTK, and Microsoft HoloLens 2
 
-### Patient Record Query
-- Facial recognition based patient identification and data retrieval
-- Historical mammogram and report browsing
-- Integration with MariaDB for patient data storage
-- Support for viewing comprehensive medical history
+## My Contributions
 
-### Diagnostic Image Analysis
-- Mammogram comparison across different time periods
-- Automatic difference detection and marking
-- ROI cropping functionality for detailed examination
-- Real-time AI prediction for benign/malignant classification
-- Detailed region measurements and visualization
+My main contributions focused on deep learning, medical image processing, and mixed reality development.
 
-### Mixed Reality Interface (HoloLens 2)
-- Hands-free gesture and voice command control
-- Dynamic image sizing and positioning
-- Remote access to patient data and images
-- Real-time diagnostic feedback display
-- Portable workspace for flexible use
+- **Deep Learning Model Training:** Participated in training and fine-tuning EfficientNetB7 using transfer learning for breast calcification classification.
+- **Dataset Preparation:** Downloaded, organized, and preprocessed mammogram images from the CBIS-DDSM dataset.
+- **ROI Processing:** Worked on Region of Interest (ROI) cropping for mammogram image analysis.
+- **Image Processing:** Participated in mammogram image comparison using OpenCV.
+- **Mixed Reality Development:** Contributed to Unity-based development using MRTK and Microsoft HoloLens 2.
 
-## System Architecture
+## Technology Stack
 
-### Frontend (HoloLens 2)
-- Unity with MRTK integration
-- WebGL-based server communication
-- Real-time image processing
-- Interactive 3D user interface
+- **Deep Learning:** PyTorch, EfficientNetB7
+- **Computer Vision:** OpenCV
+- **Dataset:** CBIS-DDSM
+- **Mixed Reality:** Unity, MRTK, Microsoft HoloLens 2
+- **Programming:** Python, C#
 
-### Backend
-- Node.js server for data management and API services
-- Flask server for image processing and AI predictions
-- MariaDB for patient records and reporting
-- File system for image storage and management
+## Project Background
 
-### Core Services
-- Patient data retrieval and management
-- Image comparison and analysis
-- Deep learning based predictions
-- Real-time data synchronization
+This was a team project. The system involved multiple components, including AI model training, image processing, backend services, database integration, and mixed reality visualization.
 
-## Future Improvements
+My primary involvement was in model training, dataset preparation, ROI processing, image comparison, and Unity-based development.
 
-### Model Enhancement
-- Improve prediction accuracy through advanced preprocessing
-- Implement automated ROI generation
-- Integrate additional imaging types
-- Enhance feature detection capabilities
+## Team Project
 
-### System Optimization
-- Improve real-time processing speed
-- Enhance user interface based on doctor feedback
-- Develop EMR integration capabilities
-- Strengthen security measures
+This project was completed collaboratively with other team members and under academic supervision.
 
-### Clinical Integration
-- Expand hospital workflow support
-- Implement multi-department collaboration features
-- Add support for different diagnostic scenarios
-- Create comprehensive audit system
+Original team repository:  
+https://github.com/JustinChien/111project_IDAL
+
+## Publication
+
+**Breast Cancer Detection Auxiliary System Leveraging Deep Learning and Mixed Reality**
+
+APSIPA ASC 2023
+
+[DOI：10.1109/APSIPAASC58517.2023.10317187]
+
+## Disclaimer
+
+This project was developed for academic research purposes and is not intended to replace professional medical diagnosis.
